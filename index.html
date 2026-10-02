@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfiya Rizvi | Computer Engineering Student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">AR<span>.</span></a>
+            <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">SECOND YEAR • COMPUTER ENGINEERING</p>
+                <h1>Hi, I'm <span>Alfiya Rizvi.</span></h1>
+                <p class="hero-text">
+                    A curious Computer Engineering student who enjoys learning technology,
+                    building creative projects, and exploring how ideas can become useful digital solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">View My Projects</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="avatar">AR</div>
+                <p>Computer Engineering</p>
+                <small>Learning • Building • Growing</small>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">ABOUT ME</p>
+                <h2>A little about me</h2>
+            </div>
+            <div class="about-grid">
+                <div>
+                    <p>
+                        I am a second-year Computer Engineering student with an interest in
+                        web development, programming, data structures, and emerging technologies.
+                        I enjoy understanding how things work and turning classroom concepts
+                        into practical projects.
+                    </p>
+                    <p>
+                        My current goal is to strengthen my technical foundation, improve my
+                        problem-solving skills, and gain hands-on experience by creating meaningful projects.
+                    </p>
+                </div>
+                <div class="info-card">
+                    <div><strong>Education</strong><span>Computer Engineering</span></div>
+                    <div><strong>Year</strong><span>Second Year</span></div>
+                    <div><strong>Focus</strong><span>Technology & Development</span></div>
+                    <div><strong>Learning</strong><span>Web, Python, C/C++, Java</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section alt">
+            <div class="section-heading">
+                <p class="eyebrow">MY SKILLS</p>
+                <h2>What I'm learning</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card"><div class="skill-icon">H</div><h3>HTML</h3><p>Creating structured and semantic webpages.</p></div>
+                <div class="skill-card"><div class="skill-icon">C</div><h3>CSS</h3><p>Designing responsive and attractive interfaces.</p></div>
+                <div class="skill-card"><div class="skill-icon">JS</div><h3>JavaScript</h3><p>Adding validation and interactive webpage features.</p></div>
+                <div class="skill-card"><div class="skill-icon">Py</div><h3>Python</h3><p>Building programs and strengthening programming fundamentals.</p></div>
+                <div class="skill-card"><div class="skill-icon">C++</div><h3>C / C++</h3><p>Practising data structures and algorithmic problem solving.</p></div>
+                <div class="skill-card"><div class="skill-icon">DB</div><h3>Database Basics</h3><p>Learning how applications store and manage information.</p></div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">PROJECTS</p>
+                <h2>Things I've worked on</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <span class="project-number">01</span>
+                    <h3>ChargeSphere</h3>
+                    <p>
+                        An EV car charging networking app concept designed to help users
+                        discover and connect with electric vehicle charging services.
+                    </p>
+                    <div class="tags"><span>UI/UX</span><span>Web</span><span>EV</span></div>
+                </article>
+                <article class="project-card">
+                    <span class="project-number">02</span>
+                    <h3>Data Structures Lab</h3>
+                    <p>
+                        Academic implementations covering stacks, queues, linked lists,
+                        trees, and related data-structure operations.
+                    </p>
+                    <div class="tags"><span>C</span><span>DS</span><span>Algorithms</span></div>
+                </article>
+                <article class="project-card">
+                    <span class="project-number">03</span>
+                    <h3>Personal Portfolio</h3>
+                    <p>
+                        A responsive portfolio website created using HTML, CSS, and JavaScript
+                        as part of the Web Programming practical.
+                    </p>
+                    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section alt">
+            <div class="section-heading">
+                <p class="eyebrow">CONTACT</p>
+                <h2>Let's connect</h2>
+                <p>Have a question or want to say hello? Send a message below.</p>
+            </div>
+
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-row">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                        <small class="error" id="nameError"></small>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                        <small class="error" id="emailError"></small>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="6" placeholder="Write your message..."></textarea>
+                    <small class="error" id="messageError"></small>
+                </div>
+                <button type="submit" class="btn primary">Send Message</button>
+                <div id="formMessage" class="form-message" role="status"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Alfiya Rizvi • Personal Portfolio</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
